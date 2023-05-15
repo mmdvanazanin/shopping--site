@@ -1,0 +1,524 @@
+
+/* github.com/mmdvanazanin */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(241, 241, 202);
+  }
+  
+  .overlay {
+    height: 100vh;
+    width: 250px;
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+/*sag menu*/
+
+.container{
+    width: 700px;
+    height: 80px;
+    background-color: rgb(71, 65, 65);
+    border-radius: 10px;
+    position: absolute;
+    left: 630px;
+    top: 35px;
+    box-shadow: 8px 8px 8px #818181;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container ul{
+    list-style-type: none;
+    
+}
+.container ul li{
+    display: inline;
+    margin: 25px;
+   
+    
+}
+.container ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: beige;
+}
+.container ul i{
+    font-size: 27px;
+    color: rgb(153, 153, 39);
+}
+
+.container ul a:hover{
+    color: #818181;
+    transition: 1s;
+}
+
+/* title */
+
+.logo{
+    width: 400px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    font-size: 60px;
+    color: rgb(153, 153, 39);
+}
+.logo span{
+    font-size: 40px;
+    color: rgb(71, 65, 65);
+}
+
+/* input */
+input{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 450px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid rgb(235, 235, 182);
+}
+.search{
+  position: absolute;
+  top: 102px;
+  left: 550px;
+  height: 28px;
+  border: 1px solid rgb(173, 167, 167);
+  border-radius: 7px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+
+/* best seller */
+
+.best-seller{
+  width: 90%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 190px;
+  left: 60px;
+}
+.best{
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  z-index: 2;
+  cursor: pointer;
+}
+.best-seller .best a{
+  font-size: 30px;
+  color: #585555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  z-index: 3;
+  text-decoration: none;
+  cursor: pointer;
+}
+.best-seller .best:nth-child(1){
+  background-color: rgb(192, 175, 152);
+  
+}
+.best-seller .best:nth-child(2){
+  background-color: rgb(170, 170, 116);
+}
+.best-seller .best:nth-child(3){
+  background-color: rgb(179, 179, 141);
+}
+.best-seller .best:hover{
+  background-color: rgb(216, 216, 177);
+  transition: 1s;
+}
+
+
+
+
+
+
+/* sekiller 1 */
+
+.row-1{
+  width: 90%;
+  height: 260px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  position: absolute;
+  top: 300px;
+  left: 60px;
+}
+.row-1 img{
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(228, 228, 168);
+  border-radius: 4px;
+}
+/* price for row 1*/
+
+.row-1 .price{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+.price .price-1{
+  width: 200px;
+  height: 40px;
+  background-color: bisque;
+  border-radius: 10px;
+  border: 1px solid rgb(240, 207, 168);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.price-1 a{
+  z-index: 4;
+  cursor: pointer;
+  font-size: 25px;
+  color: red;
+  
+}
+.price-1 span{
+  font-size: 20px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* sekiller 2 */
+
+.row-2{
+  width: 90%;
+  height: 260px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  position: absolute;
+  top: 550px;
+  left: 60px;
+}
+.row-2 img{
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(228, 228, 168);
+  border-radius: 4px;
+}
+
+/* price for row 2 */
+
+.row-2 .price2{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 257px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+.price2 .price-2{
+  width: 200px;
+  height: 40px;
+  background-color: bisque;
+  border-radius: 10px;
+  border: 1px solid rgb(240, 207, 168);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.price-2 a{
+  z-index: 4;
+  cursor: pointer;
+  font-size: 25px;
+  color: red;
+  
+}
+.price-2 span{
+  font-size: 20px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* sekiller 3 */
+
+.row-3{
+  width: 90%;
+  height: 260px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  position: absolute;
+  top: 850px;
+  left: 60px;
+}
+.row-3 img{
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(228, 228, 168);
+  border-radius: 4px;
+}
+
+/* price for row 3 */
+
+.row-3 .price3{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 257px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+.price3 .price-3{
+  width: 200px;
+  height: 40px;
+  background-color: bisque;
+  border-radius: 10px;
+  border: 1px solid rgb(240, 207, 168);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.price-3 a{
+  z-index: 4;
+  cursor: pointer;
+  font-size: 25px;
+  color: red;
+  
+}
+.price-3 span{
+  font-size: 20px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.login-giris{
+  border: none;
+  font-size: 25px;
+  color: beige;
+  background-color: rgb(71, 65, 65);
+  padding-left: 0;
+}
+.login-giris:hover{
+  color: #818181;
+  transition: 1s;
+}
+
+/* login hissesi */
+
+.login-giris{
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 60px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  z-index: 11;
+  display: flex;
+  flex-direction: row;
+}
+.imgcontainer{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+}
+.imgcontainer img {
+  width: 200px;
+  height: 200px;
+
+}
+.container-user{
+  z-index: 12;
+  width: 400px;
+  height: 500px;
+  position: relative;
+}
+.container-user .u-name{
+  width: 150px;
+  height: 50px;
+  z-index: 13;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+.container-user .user{
+  width: 200px;
+  height: 30px;
+  border: 1px solid gray;
+  z-index: 13;
+  position: absolute;
+  top: 45px;
+  left: 130px;
+}
+.container-user .passwrd{
+  width: 150px;
+  height: 50px;
+  z-index: 13;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 130px;
+  left: 30px;
+}
+.container-user .pswrd{
+  width: 200px;
+  height: 30px;
+  border: 1px solid gray;
+  z-index: 13;
+  position: absolute;
+  top: 135px;
+  left: 130px;
+}
+.container-user .tesdiq{
+  z-index: 13;
+  position: absolute;
+  top: 310px;
+  left: 150px;
+  font-size: 25px;
+  border: 1px solid green;
+  border-radius: 3px;
+  background-color: rgb(92, 165, 92);
+}
+.container-user .remember{
+  width: 200px;
+  height: 30px;
+  z-index: 13;
+  font-size: 20px;
+  position: absolute;
+  top: 250px;
+  left: 130px;
+}
+.container-user .check{
+  width: 30px;
+  height: 30px;
+  z-index: 13;
+  position: absolute;
+  top: -7px;
+  left: -60px;
+}
+
+.cancel{
+  width: 200px;
+  height: 50px;
+  z-index: 12;
+  position: absolute;
+  top: 450px;
+  left: 750px;
+}
+.cancel #baglamaq-buttonu{
+  background-color: rgb(221, 93, 93);
+  border: 2px solid rgb(221, 93, 93);
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  right: 285px;
+  top: 70px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 13;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+

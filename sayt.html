@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresentParade.com</title>
+    <link rel="stylesheet" href="css/sayt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<!-- burger menu -->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      
+      
+      <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776; </span>
+
+<!--sag menu-->
+
+      <div class="container">
+        <ul>
+
+            <li><a href="#"><i class="fa-solid fa-address-card"></i>Sign up</a></li>
+
+
+
+
+            <i class="fa-solid fa-user"></i>
+            <button class="login-giris" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+ 
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+
+            <form class="modal-content animate" action="/action_page.php">
+              <div class="imgcontainer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/User_Avatar_2.png" alt="Avatar" class="avatar">
+              </div>
+
+
+              <div class="container-user">
+                <label class="u-name" for="uname"><b>Username:</b></label>
+                <input class="user" type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label class="passwrd" for="psw"><b>Password:</b></label>
+                <input class="pswrd" type="password" placeholder="Enter Password" name="psw" required>
+          
+                <button class="tesdiq" type="submit">Login</button>
+                <label class="remember">
+                  <input class="check" type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+              <div class="cancel">
+                <button id="baglamaq-buttonu" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+
+
+
+
+            
+            <li><a href="#"><i class="fa-solid fa-heart"></i>Favorite</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Basket</a></li>
+        </ul>
+      </div>
+
+
+      <!--title-->
+
+      <div class="logo">
+        <i class="fa-brands fa-pied-piper-pp"></i>
+        <span>Present Parade</span>
+      </div>
+
+      <!--input-->
+      <input type="search" name="" placeholder="type the name of the product you are looking for">
+      <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
+
+
+ <!--best seller-->
+      
+<div class="best-seller">
+
+       <div class="best">
+      <a href="#">Best sellers this week</a>
+       </div>
+       <div class="best">
+      <a href="#">Most added to favorite</a>
+       </div>
+       <div class="best">
+      <a href="#">On discaunt</a>
+       </div>
+
+</div>
+
+<!--sekiller-->
+       <div class="row-1">
+        <img src="https://www.watchclub.com/upload/watches/gallery_big/watch-club-rolex-day-date-brand-new-5-year-warranty-ref-228238-year-2019-13363-3.jpg" alt="1">
+        <img src="https://ae01.alicdn.com/kf/HTB1AO3atY1YBuNjSszeq6yblFXaI/Summer-Beach-Necklace-Fashion-Vintage-Cross-Jesus-Virgin-Mary-Multi-layer-Pendant-Clavicle-Necklace-Woman-s.jpg" alt="3">
+        <img src="https://i.pinimg.com/736x/61/0c/df/610cdf65707c7edf04b46dbaf8ad7651--jewllery-breakfast.jpg" alt="4">
+        <img src="https://i.pinimg.com/originals/fd/1c/2d/fd1c2d1a7879402953965051a67116dc.jpg" alt="2">
+      <div class="price">
+        <div class="price-1">
+          <span>$ 8.000</span>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+        </div>
+        <div class="price-1">
+          <span>$ 5</span>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+        </div>
+        <div class="price-1">
+          <span>$ 8</span>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+        </div>
+        <div class="price-1">
+          <span>$ 4</span>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+        </div>
+
+      </div> 
+      </div>
+
+      <div class="row-2">
+        <img src="https://i.pinimg.com/originals/e5/33/99/e533998ff554b1116ae88041cf3c75bd.jpg" alt="1">
+        <img src="https://kalendari.1c-umi.ru/images/cms/data/bloknoti/eko_bloknoty.jpg" alt="2">
+        <img src="https://s.hdnux.com/photos/57/23/26/12400036/4/rawImage.jpg" alt="3">
+        <img src="https://ae04.alicdn.com/kf/Ha416b3ba3a0d456e9a4163372213fe22k/8.jpg" alt="4">
+      
+        <div class="price2">
+          <div class="price-2">
+            <span>$ 13</span>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+          <div class="price-2">
+            <span>$ 3</span>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+          <div class="price-2">
+            <span>$ 0.5</span>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+          <div class="price-2">
+            <span>$ 2</span>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+  
+        </div> 
+      </div>
+
+     <div class="row-3">
+        <img src="https://mockup.love/wp-content/uploads/edd/2017/04/Tea-Coffee-Mug-Mockup-1000x738.jpg" alt="1">
+        <img src="https://www.kibrisacicekgonder.com/thumbnail.php?file=pics/pics_urun/pro_12309/c80a4f3e7fcc84271250076f1c0e559b.jpg&pwidth=850" alt="1">
+        <img src="https://img.alicdn.com/imgextra/i2/T1oxdSFsxpXXXXXXXX_!!0-item_pic.jpg" alt="1">
+        <img src="https://cdn.shopify.com/s/files/1/0124/6966/5849/articles/Nike_Blazer_Mid_77_Vintage.jpg" alt="1">
+      
+        <div class="price3">
+          <div class="price-3">
+            <span>$ 5</span>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+          <div class="price-3">
+            <span>$ 15</span>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+          <div class="price-3">
+            <span>$ 30</span>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+          <div class="price-3">
+            <span>$ 20</span>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+          </div>
+  
+        </div> 
+      </div>
+
+      <script src="JavaScript/sayt.js"></script>
+    
+</body>
+</html>
